@@ -1,0 +1,248 @@
+/* --- ESTILOS GENERALES --- */
+body {
+  margin: 0;
+  font-family: "Orbitron", "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(120deg, #000814, #001f54, #b30000);
+  color: #ffffff;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* --- ENCABEZADO Y NAVEGACIÓN --- */
+.site-header {
+  background: radial-gradient(circle at center, #001f54, #000814);
+  padding: 20px;
+  box-shadow: 0 0 15px #b30000;
+}
+
+.logo {
+  font-size: 2.5em;
+  color: #ff0000;
+}
+
+.navbar {
+  margin-top: 10px;
+}
+
+.navbar a {
+  margin: 0 15px;
+  color: #ffffff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #ff0000;
+}
+
+/* --- SECCIONES GENERALES --- */
+section {
+  padding: 50px 20px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+section h2 {
+  color: #00bfff;
+  margin-bottom: 20px;
+}
+
+section ul li {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 10px auto;
+  max-width: 600px;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  transition: 0.3s;
+}
+
+section ul li:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.02);
+}
+
+/* --- CATÁLOGO --- */
+.catalogo {
+  background: linear-gradient(120deg, #001f54, #000814);
+}
+
+/* --- PC --- */
+.pc {
+  background: linear-gradient(120deg, #002a7a, #001233);
+}
+
+/* --- CONSOLA --- */
+.consola {
+  background: linear-gradient(120deg, #800000, #b30000);
+}
+
+/* --- DESCUENTOS --- */
+.descuentos {
+  background: linear-gradient(120deg, #3a0ca3, #4361ee, #7209b7);
+  color: #fff;
+}
+
+.descuentos h2 {
+  color: #ffb3ff;
+}
+
+.descuentos strong {
+  color: #00e0ff;
+}
+
+/* --- PROMOCIONES (SUSCRIPCIONES) --- */
+.promociones {
+  background: linear-gradient(120deg, #004b23, #000000, #008000);
+  color: #e0ffe0;
+}
+
+.promociones .subs {
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid #00ff88;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  box-shadow: 0 0 15px #00ff88;
+}
+
+/* --- DESCONTINUADOS --- */
+.descontinuados {
+  background: linear-gradient(120deg, #111, #333);
+  color: #ffcccc;
+}
+
+.descontinuados li {
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid #ff4444;
+}
+
+/* --- COMPRAS EN LÍNEA --- */
+.compras {
+  background: linear-gradient(120deg, #001f54, #000814);
+}
+
+.compras form {
+  display: inline-block;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #ff0000;
+}
+
+.compras label {
+  display: block;
+  margin-top: 10px;
+}
+
+.compras input,
+.compras select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  margin-top: 5px;
+  border: none;
+  background: #111;
+  color: #fff;
+}
+
+.compras button {
+  margin-top: 20px;
+  background: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.compras button:hover {
+  background: #b30000;
+}
+
+/* --- SUCURSALES --- */
+.sucursales {
+  background: linear-gradient(120deg, #001f54, #000814);
+}
+
+.sucursales iframe {
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #00bfff;
+}
+
+/* --- SOBRE NOSOTROS --- */
+.nosotros {
+  background: linear-gradient(120deg, #141414, #000000);
+  color: #ccc;
+}
+
+/* --- CONTACTO --- */
+.contacto {
+  background: linear-gradient(120deg, #001233, #000814);
+}
+
+.contacto ul {
+  margin-top: 10px;
+}
+
+.contacto li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.contacto a {
+  color: #00ffcc;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contacto a:hover {
+  color: #ff0000;
+}
+
+/* --- FOOTER --- */
+footer {
+  background: #000;
+  padding: 15px;
+  color: #aaa;
+  font-size: 0.9em;
+  border-top: 1px solid #222;
+}
+
+/* --- RESPONSIVO --- */
+@media (max-width: 768px) {
+  .navbar a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section ul li {
+    max-width: 90%;
+  }
+
+  .compras form {
+    width: 90%;
+  }
+}
